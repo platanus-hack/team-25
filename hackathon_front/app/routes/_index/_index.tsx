@@ -3,7 +3,6 @@ import {
   type LoaderFunctionArgs,
   type MetaFunction,
 } from '@vercel/remix';
-import { Navbar } from './navbar';
 import { authenticator } from '~/services/auth.server';
 import { Form } from '@remix-run/react';
 import { Button } from '~/components/button';
@@ -48,23 +47,28 @@ export default function Index() {
     <div className="absolute inset-0 flex items-center justify-center">
       <div className="flex flex-col w-1/3 items-center justify-center">
         <img src="/logo.svg" alt="Elephorum" className="w-64 h-64" />
-        <p className="text-4xl text-center font-semibold">
-          Unidos por ideas gigantes: conecta, crea y transforma con una red tan
-          fuerte como un <span className="text-primary">elefante</span>.
+        <p className="text-4xl text-center font-semibold tracking-wide">
+          Donde las mentes brillantes se unen para crear algo tan grande como un{' '}
+          <span className="text-primary">elefante</span>.
         </p>
-        <div className="grid grid-cols-2 gap-4 mt-10">
-          <Form method="post" action="/auth/auth0" className="w-full">
-            <Button className="w-full">Login</Button>
-          </Form>
-          <Form
-            action="/auth/auth0?screen_hint=signup"
-            method="post"
-            className="w-full"
-          >
-            <Button variant="outline" className="w-full">
-              Registrarse
-            </Button>
-          </Form>
+        <div className="mt-10">
+          <p className="italic text-muted-foreground text-lg font-light mb-2">
+            Unete a la comunidad de creadores mas grande de latam
+          </p>
+          <div className="grid grid-cols-2 gap-4 ">
+            <Form method="post" action="/auth/auth0" className="w-full">
+              <Button className="w-full">Login</Button>
+            </Form>
+            <Form
+              action="/auth/auth0?screen_hint=signup"
+              method="post"
+              className="w-full"
+            >
+              <Button variant="outline" className="w-full">
+                Registrarse
+              </Button>
+            </Form>
+          </div>
         </div>
       </div>
     </div>

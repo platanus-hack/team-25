@@ -107,7 +107,7 @@ export default function Page() {
               disabled={state !== 'idle'}
               className="flex items-center justify-center gap-2"
             >
-              Comienza tu viaje <Rocket />
+              Comienza tu aventura <Rocket />
             </Button>
           </CardFooter>
         </Form>

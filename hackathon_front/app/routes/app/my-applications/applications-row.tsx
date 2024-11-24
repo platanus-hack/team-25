@@ -21,7 +21,7 @@ function ApplicationRow({
     <TableRow>
       <TableCell>{position.name}</TableCell>
       <TableCell>{motivation}</TableCell>
-      <TableCell>{differenceInDays}</TableCell>
+      <TableCell>{differenceInDays} dias</TableCell>
       <TableCell>
         <PositionStatus status={status} />
       </TableCell>
