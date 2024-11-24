@@ -1,0 +1,10 @@
+{ 
+    // nombre de su producto / solución
+    "project_name": "Elephorum",
+    // descripción de una frase y directa al grano de la solución
+    "oneliner": "Plataforma que conecta universitarios para llevar a la vida sus proyectos.",
+    // url al logo de proyecto. mínimo 200x200, png. puede estar hosteado en el mismo repo.
+    "logo_url": "https://github.com/platanus-hack/team-25/blob/main/logo.png",
+    // url para acceder a su app. si es apk u otro, link de descarga directa.
+    "app_url": "https://elephorum.lat/"
+}
